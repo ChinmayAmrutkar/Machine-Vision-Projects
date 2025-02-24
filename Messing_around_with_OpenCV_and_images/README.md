@@ -19,18 +19,16 @@ Learn how to load and display an image, and understand why color correction is n
 import cv2
 import matplotlib.pyplot as plt
 
-# Load an image captured near Hole in the Rock, Phoenix, Arizona
+#Load an image
 img = cv2.imread('A1_I1.jpg')
-
-# Display the original BGR image (colors will appear inverted)
 plt.imshow(img)
-plt.title("BGR Image")
+plt.axis('off')
 plt.show()
 
-# Convert from BGR to RGB for correct color representation
+# Convert the image from BGR to RGB
 image_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 plt.imshow(image_rgb)
-plt.title("RGB Image")
+plt.axis('off')
 plt.show()
 ```
 
@@ -49,14 +47,11 @@ Focus on a specific region of the image by cropping to analyze details.
 
 **Code**
 ```python
-# Define cropping coordinates (x, y, width, height)
+# Define the cropping coordinates (x, y, width, height)
 x, y, w, h = 560, 460, 70, 70
 cropped_image = image_rgb[y:y+h, x:x+w]
 
-# Display the zoomed-in (cropped) image
-plt.imshow(cropped_image)
-plt.title("Zoomed-In Image")
-plt.show()
+display_image(cropped_image,"Crooped Image")
 ```
 
 **Observation:** <br>
@@ -141,16 +136,29 @@ Quantify the error introduced during the upsampling process by comparing the ups
 ```python
 import numpy as np
 
-# Calculate absolute differences between the ground truth and the upsampled images
-difference_nearest = cv2.absdiff(image_rgb2, nearest_neighbor_image)
-difference_bicubic = cv2.absdiff(image_rgb2, bicubic_image)
+# Calculate the absolute difference between the ground truth image and the upsampled images
+difference_nearest = cv2.absdiff(image_rgb, nearest_neighbor_image)
+difference_bicubic = cv2.absdiff(image_rgb, bicubic_image)
 
-# Sum the pixel differences to quantify error
+plt.subplot(1, 2, 1)
+plt.imshow(difference_nearest)
+plt.axis('off')
+plt.title('Difference Nearest Neighbor Interpolation')
+
+plt.subplot(1, 2, 2)
+plt.imshow(difference_bicubic)
+plt.axis('off')
+plt.title('Difference Bicubic Interpolation')
+
+plt.show()
+
+# Sum all the pixels in the difference images
 sum_difference_nearest = np.sum(difference_nearest)
 sum_difference_bicubic = np.sum(difference_bicubic)
 
-print("Nearest Neighbor Error:", sum_difference_nearest)
-print("Bicubic Error:", sum_difference_bicubic)
+# Report the sums
+print(f"Sum of pixel differences (Nearest Neighbor): {sum_difference_nearest}")
+print(f"Sum of pixel differences (Bicubic): {sum_difference_bicubic}")
 ```
 
  **Observation:** <br>
