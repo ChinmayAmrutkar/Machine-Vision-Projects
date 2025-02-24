@@ -82,7 +82,7 @@ Run the file. If there are no errors, then all required libraries have been inst
 
 For prototyping your code, I recommend using an **IDE** such as:
 
-- **[VS Code]**(https://code.visualstudio.com/download)
+- **[VS Code](https://code.visualstudio.com/download)**
 - **[Spyder](https://www.spyder-ide.org/)** (included with Anaconda)
 - **[PyCharm](https://www.jetbrains.com/pycharm/)**
 
