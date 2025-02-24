@@ -1,4 +1,4 @@
-# OpenCV and Image Processing Exploration
+# Messing around with OpenCV and Images
 
 ## Overview
 This repository is dedicated to experimenting with OpenCV and image processing techniques. The main objective is to explore image manipulation, including displaying, cropping, resizing, and analyzing image transformations using different interpolation methods. The goal is to gain a deeper understanding of image processing while experimenting with OpenCV functions.
