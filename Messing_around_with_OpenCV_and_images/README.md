@@ -160,10 +160,8 @@ print("Bicubic Error:", sum_difference_bicubic)
 
 ---
 
-## Acknowledgments
-Resources and References:
-- GeeksforGeeks - Image Resizing using OpenCV Python
-- YouTube Tutorial on Image Resizing
+## References:
+- For detailed methodologies and data, refer to the full [documentation](https://github.com/ChinmayAmrutkar/Machine-Vision-Projects/blob/main/Messing_around_with_OpenCV_and_images/Messing_around_with_OpenCV_and_Images.pdf)
 
 ---
 
