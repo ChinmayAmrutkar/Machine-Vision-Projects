@@ -4,7 +4,7 @@ Welcome to my **Machine Vision Projects** repository! This repository is dedicat
 
 ## Projects
 
-- **First Project:** Messing around with OpenCV and Images
+- **First Project:** [Messing around with OpenCV and Images](https://github.com/ChinmayAmrutkar/Machine-Vision-Projects/tree/main/Messing_around_with_OpenCV_and_images)
 - **Future Projects:** *(In Progress)*
 
 Feel free to explore the projects and contribute to any of them. Each project will have its own folder with a **detailed explanation, code, and sometimes additional resources or data**.
