@@ -103,6 +103,14 @@ The experiment highlights the importance of choosing the right NeRF model based 
 
 ---
 
+## 📸 Nerfacto Video
+
+https://github.com/user-attachments/assets/0d344bda-ad1a-4517-a2cc-6e2025b035c8
+
+
+
+---
+
 ## 📄 More Information
 
 For a detailed technical analysis, methodology, and complete results, please refer to the full project [paper](https://github.com/ChinmayAmrutkar/Machine-Vision-Projects/blob/main/3D-Reconstruction-of-ARISPE-Meteorite-using-Neural-Radiance-Fields/Efficient_3D_Scene_Modeling_with_Instant_NGP__Nerfacto__and_TensoRF__A_Case_Study_on_the_ARISPE_Meteorite.pdf) included in this repository.
