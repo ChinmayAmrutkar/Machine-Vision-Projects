@@ -105,7 +105,7 @@ The experiment highlights the importance of choosing the right NeRF model based 
 
 ## 📄 More Information
 
-For a detailed technical analysis, methodology, and complete results, please refer to the full project paper included in this repository.
+For a detailed technical analysis, methodology, and complete results, please refer to the full project [paper](https://github.com/ChinmayAmrutkar/Machine-Vision-Projects/blob/main/3D-Reconstruction-of-ARISPE-Meteorite-using-Neural-Radiance-Fields/Efficient_3D_Scene_Modeling_with_Instant_NGP__Nerfacto__and_TensoRF__A_Case_Study_on_the_ARISPE_Meteorite.pdf) included in this repository.
 
 ---
 
@@ -116,6 +116,15 @@ For a detailed technical analysis, methodology, and complete results, please ref
 - [Nerfacto (Nerfstudio)](https://docs.nerf.studio/nerfology/methods/nerfacto.html)
 - [TensoRF (Official GitHub)](https://github.com/apchenstu/TensoRF)
 - [Metashape by Agisoft](https://www.agisoft.com/)
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this work, provided that proper credit is given.
+
+For more details, see the [LICENSE](LICENSE) file.
 
 ---
 
