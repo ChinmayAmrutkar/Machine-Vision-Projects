@@ -27,13 +27,17 @@ The goal was to explore NeRF-based 3D modeling workflows and evaluate their effe
 - Camera poses were estimated using **Agisoft Metashape**, and sparse point clouds were generated.
 - Poses were exported as `.xml` and converted to `transforms.json` compatible with NeRF Studio.
 
-Sample captured images:
+Sample captured image:
 
-![Sample Image](images/sample_image.jpg)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c51e278f-3707-4046-93f8-5077211f3d4a" width="45%">
+</p>
 
 Sparse cloud and camera poses:
 
-![Sparse Cloud](images/sparse_cloud.jpg)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cfb07033-bad7-4370-bb6c-ef56971674e7" width="45%">
+</p>
 
 ---
 
@@ -47,16 +51,35 @@ We trained and compared the following models:
 - Surface structure reconstructed well.
 - Minor blurring observed in fine features (e.g., text on the black plate).
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ecf53340-8cf3-4775-bfa5-d0baf943639d" width="45%">
+  <img src="https://github.com/user-attachments/assets/5cacf3b0-2388-4b3e-b1fc-76d28fcad75a" width="45%">
+</p>
+
+---
+
 ### 2. Nerfacto
 - Training Time: **~16 minutes**
 - Produced the **highest reconstruction quality**.
 - Finer surface details and text on the ARISPE information plate were **readable**.
 - Background and transparent surfaces (like glass) reconstructed well.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c852d332-c05c-4a7d-a6b4-dcc6b90da47e" width="45%">
+  <img src="https://github.com/user-attachments/assets/8b5149f2-fc01-4ce4-9059-9b2069ec5d7e" width="45%">
+</p>
+
+---
+
 ### 3. TensoRF
 - Training Time: **~92 minutes**
 - Captured the basic structure, but significant **noise artifacts** appeared.
 - Fine details and text were less accurately modeled compared to Nerfacto.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2bed5715-16a7-4ecb-8f3a-6a92f96f3ec6" width="45%">
+  <img src="https://github.com/user-attachments/assets/9b1d92f2-6a57-41e1-91d0-8a752cdcad4c" width="45%">
+</p>
 
 ---
 
@@ -80,9 +103,10 @@ The experiment highlights the importance of choosing the right NeRF model based 
 
 ---
 
-## 📂 Repository Structure
+## 📄 More Information
 
-/images/ # Contains sample dataset images and sparse cloud visualizations /outputs/ # Trained models outputs (optional, if included) /paper/ # Final conference-style paper (PDF) /code_snippets/ # Code snippets used during training README.md # Project overview
+For a detailed technical analysis, methodology, and complete results, please refer to the full project paper included in this repository.
+
 ---
 
 ## 🔗 References
