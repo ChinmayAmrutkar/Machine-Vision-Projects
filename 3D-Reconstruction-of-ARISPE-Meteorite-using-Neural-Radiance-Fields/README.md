@@ -124,7 +124,7 @@ For a detailed technical analysis, methodology, and complete results, please ref
 This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute this work, provided that proper credit is given.
 
-For more details, see the [LICENSE](LICENSE) file.
+For more details, see the [LICENSE]([LICENSE](https://github.com/ChinmayAmrutkar/Machine-Vision-Projects/blob/main/3D-Reconstruction-of-ARISPE-Meteorite-using-Neural-Radiance-Fields/LICENSE.txt)) file.
 
 ---
 
